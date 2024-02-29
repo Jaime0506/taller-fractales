@@ -1,6 +1,13 @@
 import turtle
 import math
 
+screen = turtle.Screen()
+
+width = screen.window_width()
+height = screen.window_height()
+
+print(width, height)
+
 t = turtle.Turtle()
 t.pensize(2)
 t.speed(0)
@@ -54,8 +61,6 @@ cantidad_figuras = 3
 
 # Dibujar figura
 for i in range(cantidad_figuras):
-    
     draw_rotated_square(t, i * incremento_angulo, lado)
-
 
 turtle.done()
